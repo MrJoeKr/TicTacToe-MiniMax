@@ -7,7 +7,7 @@ mainClock = pygame.time.Clock()
 
 # initialization
 pygame.init()
-pygame.display.set_caption('Tic Tac Toe by Jozef')
+pygame.display.set_caption('Tic Tac Toe')
 icon = pygame.image.load('imgs\icon.png')
 pygame.display.set_icon(icon)
 WIDTH, HEIGHT = 700, 550
@@ -86,7 +86,7 @@ def main_menu():
 		draw_text('2 Players', font, WHITE, screen, x+85, y+120)
 		draw_text('Options', font, WHITE, screen, x+85, y+240)
 
-		draw_text('by Jozef Kraus', font_me, BLACK, screen, 420, 500)
+		draw_text('by MrJoeKr', font_me, BLACK, screen, 420, 500)
 
 		click = False
 		for event in pygame.event.get():
