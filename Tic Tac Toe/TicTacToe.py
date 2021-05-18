@@ -1,14 +1,6 @@
 import pygame, sys
 from pygame.locals import *
 import random
-import threading
-import time
-# changing recursion limit for tic tac toe
-# import sys
-# sys.setrecursionlimit(50)
-
-
-# ADD SWITCHING TURNS AFTER ROUND
 
 
 mainClock = pygame.time.Clock()
