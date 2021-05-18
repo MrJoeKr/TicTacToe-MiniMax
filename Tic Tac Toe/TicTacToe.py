@@ -223,62 +223,6 @@ def check_for_tie(board, turn_X):
 	return tie
 
 
-# This function is for minimax algorithm - evaluating win, loss and tie
-# Totally useless
-# def evaluate(board):
-# 	win = False
-# 	win_X = False
-# 	win_O = False
-# 	for x in range(1, 10):
-# 		# row check
-# 		if x in [1,4,7]:
-# 			if board[x] == board[x+1] and board[x+1] == board[x+2] and board[x] != '':
-# 				if board[x] == 'X':
-# 					win_X = True
-# 				else:
-# 					win_O = True
-# 				win = True
-
-# 		# columns check
-# 		if x < 4:
-# 			if board[x] == board[x+3] and board[x+3] == board[x+6] and board[x] != '':
-# 				if board[x] == 'X':
-# 					win_X = True
-# 				else:
-# 					win_O = True
-# 				win = True
-
-
-# 		#diagonal check
-# 		elif board[1] == board[5] and board[5] == board[9] and board[1] != '':
-# 			if board[1] == 'X':
-# 				win_X = True
-# 			else:
-# 				win_O = True
-# 			win = True
-
-# 		elif board[3] == board[5] and board[5] == board[7] and board[3] != '':
-# 			if board[3] == 'X':
-# 				win_X = True
-# 			else:
-# 				win_O = True
-# 			win = True
-
-# 	if win_X:
-# 		value = -10
-# 	elif win_O:
-# 		value = 10
-# 	else:
-# 		print(f'draw...result')
-# 		for i in range(1,4):
-# 			print(board[i], board[i+1], board[i+2])
-
-# 		value = 0
-
-# 	# print(f'result {board}')
-# 	# print(f'value is {value}')
-# 	return value
-
 # Opponents
 
 # baby AI - puts circles randomly
@@ -408,7 +352,6 @@ def draw_line(x, y, w, h, color):
 
 def draw_win_line(board, x, y):
 
-	# new
 	for x in range(1,10):
 
 		w = 440
@@ -733,7 +676,6 @@ def easy():
 						clicks.clear()
 						turns = [i for i in range(1, 10)]
 
-						# new variables
 						empty_cells = turns
 						drawn_cells = []
 
@@ -849,7 +791,6 @@ def impossible():
 				board[i] = 'O'
 
 		# checking if tie
-		# new
 		if not win:
 			tie = check_for_tie(board, turn_X)
 
@@ -963,7 +904,6 @@ def impossible():
 						clicks.clear()
 						turns = [i for i in range(1, 10)]
 
-						# new variables
 						empty_cells = turns
 						drawn_cells = []
 
@@ -1187,7 +1127,6 @@ def player_2():
 						clicks.clear()
 						turns = [i for i in range(1, 10)]
 
-						# new variables
 						empty_cells = turns
 						drawn_cells = []
 
