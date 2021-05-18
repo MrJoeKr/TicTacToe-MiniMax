@@ -86,7 +86,7 @@ def main_menu():
 		draw_text('2 Players', font, WHITE, screen, x+85, y+120)
 		draw_text('Options', font, WHITE, screen, x+85, y+240)
 
-		draw_text('by MrJoeKr', font_me, BLACK, screen, 420, 500)
+		draw_text('by MrJoeKr', font_me, BLACK, screen, 460, 500)
 
 		click = False
 		for event in pygame.event.get():
