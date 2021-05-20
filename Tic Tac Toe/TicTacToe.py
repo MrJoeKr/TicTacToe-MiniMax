@@ -1,6 +1,8 @@
-import pygame, sys
+import pygame
+import sys
 from pygame.locals import *
 import random
+import os
 
 
 mainClock = pygame.time.Clock()
@@ -8,7 +10,7 @@ mainClock = pygame.time.Clock()
 # initialization
 pygame.init()
 pygame.display.set_caption('Tic Tac Toe')
-icon = pygame.image.load('imgs\icon.png')
+icon = pygame.image.load(os.path.join('imgs', 'icon.png'))
 pygame.display.set_icon(icon)
 WIDTH, HEIGHT = 700, 550
 screen = pygame.display.set_mode((WIDTH, HEIGHT), 0, 32)
@@ -29,18 +31,18 @@ ORANGE = (255, 100, 0)
 
 # customizations for crosses and circles
 
-cross = pygame.image.load("imgs\cross.png")
-circle = pygame.image.load("imgs\circle.png")
+cross = pygame.image.load(os.path.join("imgs","cross.png"))
+circle = pygame.image.load(os.path.join("imgs", "circle.png"))
 
 
 def change_cross(directory):
 	global cross # why would I do that like this
-	cross = pygame.image.load('imgs\\' + directory)
+	cross = pygame.image.load(os.path.join('imgs', directory))
 
 
 def change_circle(directory):
 	global circle
-	circle = pygame.image.load('imgs\\' + directory)
+	circle = pygame.image.load(os.path.join('imgs', directory))
 
 
 def draw_text(text, font, color, surface, x, y):
@@ -325,7 +327,7 @@ def findBestMove(board, turn_X):
 
 # Considering 'O' as the AI
 # using funcs: evaluate(), minimax(), findBestMove()
-def impossible_AI(board):
+def impossible_AI(board):	
 	# when activated, it's 'O's turn
 	turn_X = False
 	position = findBestMove(board, turn_X)
@@ -791,6 +793,7 @@ def impossible():
 				board[i] = 'O'
 
 		# checking if tie
+		
 		if not win:
 			tie = check_for_tie(board, turn_X)
 
