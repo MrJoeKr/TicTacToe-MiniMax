@@ -1,6 +1,6 @@
 # TicTacToeMiniMax
 Tic Tac Toe game with MiniMax Algorithm implementation (fighting against "ImpossibleAI" I use to call it).
-Made in Python.
+Made in Python 3.X.
 
 # Features
   - **1-player mode**:
