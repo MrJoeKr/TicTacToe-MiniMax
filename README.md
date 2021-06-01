@@ -18,7 +18,7 @@ Made in Python 3.X.
     - Random
 
 
-Rules to Tic Tac Toe: 
+Rules of Tic Tac Toe: 
 https://en.wikipedia.org/wiki/Tic-tac-toe
 
 **Enjoy**
