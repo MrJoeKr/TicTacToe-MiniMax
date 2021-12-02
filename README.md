@@ -9,7 +9,7 @@ Made in Python 3.X.
       -   **Impossible** _(using MiniMax Algorithm)_
 
   - **2-players mode**
-  - **Options** -> possibility of changing **SKINS** for your crosses and circles (completely **free** to use)
+  - **Options** -> possibility of changing **SKIN** for your crosses and circles (completely **free** to use)
 
 # Requirements
   - Modules:
